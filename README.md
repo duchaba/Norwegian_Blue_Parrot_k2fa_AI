@@ -20,3 +20,30 @@ The "k2fa" AI project is for kids to learn about farm animals. Think of "k2fa"  
 More concisely, "k2fa" is Deep Learning Convolutional Neural Network (CNN) image classification model.
 
 Before charging ahead with an in-depth explanation, let's test the "k2fa" kids. Show the "k2fa" kids a picture, and they will identify it. Scroll down  to the "Prediction section" and have fun.
+
+# Prediction
+
+Hello, from "k2fa" kids. Since "k2fa" kids are not robots, you are selected to be the avatar  , i.e., the hands and feet of the "k2fa" kids.
+
+![prediction image](https://nbp3-webclient-2020.web.app/image/undraw_experience_design_eq3j.svg)
+
+Imagine yourself as a "k2fa"  kid, walking around the farm, taking photos  , or uploading them using iPhone, Android phone, tablet, or laptop. This website is mobile-friendly.
+
+Take a picture or upload an image of a dog, a chicken, a cow, a wolf, your face, your friend, or even an armadillo. The "k2fa" kids will immediately  identify which of the thirteen farm animals is the closest match to the image, including the confidence level. Furthermore, the "k2fa" kids will show the top three inferences.
+
+One should run the test many times. It will give a clear understanding of what is possible and what is not.
+
+There are copious statistics that accompany each inference. The in-depth explanation for the statistics, data, insights, biases, and limitations will be in the next section, but for now, enjoy  being a "k2fa" avatar.
+
+### Goto the k2fa website to test it, https://nbp3-webclient-2020.web.app/#predict
+
+A sample result is as follows.
+
+![cat result image](https://media-exp1.licdn.com/dms/image/C4D12AQFcyk7e7VszMg/article-inline_image-shrink_1000_1488/0?e=1602115200&v=beta&t=fZ-OJsgyyT6W7LqdU4s4wkTtja5leFpx74uqUEHT7BM)
+
+![cat stat](https://media-exp1.licdn.com/dms/image/C5612AQFsxUUUvbJ4Ow/article-inline_image-shrink_1000_1488/0?e=1602115200&v=beta&t=c2Ue9AWM7GAvYpz82d3kRTMXsxG_ubFPAmE48IW1_UU)
+
+## Legends:
+
+The "Delta Time" is a measurement of the elapsed time for each function.
+
