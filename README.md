@@ -45,5 +45,34 @@ A sample result is as follows.
 
 ## Legends:
 
-The "Delta Time" is a measurement of the elapsed time for each function.
+1. The "Delta Time" is a measurement of the elapsed time for each function.
+
+- The "Predict"  time is the principal value. It calculates the time "k2fa" takes to give a prediction. On average, during high system-load, it is less than half  of a second.
+
+ - The "1_cycle" time is calculated from a moment the device, e.g., iPhone or laptop, issues the request to it received the response from the server. It includes the network time, image upload, and JSON API response time.
+
+ - The "Architecture" section will explain the timing in-depth.
+
+2. The "Model version" shows that the AI model dependents and its software version. The "Model" section will give a full explanation.
+
+3. The "Trained" describes the "k2fa" training statistics. The "Model" and the "Data" section will explain it further.
+
+4. The "AI Deployed System" is the detailed information about the "k2fa" deployed system.
+
+- It is comparable to a "microservices,"  and it is not the massive AI training server.
+
+- There is no GPU  , and the CPU RAM is only 2 GB. The reported "free RAM" for each request is for monitoring memory leaks.
+
+- Google App Engine  enables auto-scaling automatically.
+
+- The "Architecture" section will fully explain it.
+
+5. The "Raw inferences" is raw data response from the API. It contains the thirteen  possible farm animals and the associate level of confidence.
+
+
+
+
+
+
+
 
