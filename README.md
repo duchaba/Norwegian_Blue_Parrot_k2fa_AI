@@ -148,5 +148,75 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 
 ![data bunch image](https://nbp3-webclient-2020.web.app/image/databunch1.jpg)
 
+5. ### Find the fit-rate
+
+- Calculate the fit-rate using fast.ai method ".lr_find()" and ".recorder.plot()". It is based on "How Do You Find A Good Learning Rate" (https://sgugger.github.io/how-do-you-find-a-good-learning-rate.html) by Sylvain Gugger.
+- Look for the lowest point and take 1e-1 less, or write a python scripts using the ".recorder.losses" to calculate the average 12 points slope that less than 1e-2 and divide it by 10.
+- The resulting fit-rate is  "slice(0.00030935651031245543, 0.004833695473632116, None)"
+- It is usually close to professor Jeremy Howard's magic fit-rate of 1e-3.
+
+![fit-rate image](https://nbp3-webclient-2020.web.app/image/fit1.jpg)
+
+6. ### Use the default hyper-parameters
+
+- The "percentage per one_fit_cycle" (pct_start) rate is 0.3.
+- The "momentum" rate is list(0.95, 0.85).
+- The "dropout" rate is 0.5.
+
+7. ### Select the base architecture
+
+- The base architecture is "resnet34." (https://arxiv.org/pdf/1512.03385.pdf)  The "resnet50" would work as well.
+- "Transfer learning" is a method using the pre-trained convolutional neural networks to train an image classifier model faster and with higher accuracy. The ILSVRC (http://image-net.org/challenges/LSVRC/) trained the "resnet34" or "resnet50" model with 1.2 million images over 1,000 categories.
+
+![resnet34 image](https://nbp3-webclient-2020.web.app/image/resnet.jpg)
+
+8. ### Train for six epoch
+
+- Train with "fastai.vision.fit_one_cycle()" method.
+- fit_one_cycle (https://iconof.com/1cycle-learning-rate-policy/) is better performance in speed and accuracy, over the ".fit()" method.
+- Select the "root mean square" as the accuracy measurement.
+- The resulting accuracy is 0.955556 
+
+![train image](https://nbp3-webclient-2020.web.app/image/train1.jpg)
+
+9. ### Unfreeze the model
+
+- Unfreeze the model to train all the layers. By default, the resnet34 layers are frozen.
+
+10. ### Find the new fit-rate
+
+- Perform the same step as #5.
+- The resulting fit-rate  is "slice(3.7192832996602014e-06, 5.811380155719065e-05, None)".
+
+![unfreeze fit-rate image](https://nbp3-webclient-2020.web.app/image/fit2.jpg)
+
+11. ### Train for six more epoch
+
+- Perform the same step as #8.
+- The resulting accuracy  is 0.967949
+
+![train image](https://nbp3-webclient-2020.web.app/image/train2.jpg)
+
+12. ### Verify the loss and confuse matrix
+
+- The most confused is between "duck" and "goose" then "sheep" and "goat" then "horse" and "donkey."
+- Additional epoch training would help to increase the accuracy a little more because the train-loss and valid-loss are decreasing.
+- Additional images  would be the best method to improve accuracy.
+
+![loss confused image 1](https://nbp3-webclient-2020.web.app/image/stat1.jpg)
+![loss confused image 2](https://nbp3-webclient-2020.web.app/image/confuse.jpg)
+![loss confused image 3](https://nbp3-webclient-2020.web.app/image/loss.jpg)
+
+13. ### Deployment
+
+- The deployment is on the Google App Engine API microservices. The development of this beautifies client-website follows the same architecture as the  "Be-Nice-2020" (https://be-nice-2020.com/) project.
+- It is an enterprise-grade deployment at little or no cost using microservices and CDN. Be-nice-2020's architecture (https://be-nice-2020.com/#architecture) is a well-written architecture, including step-by-step instructions. The difference is that the Google App Engine is a Python engine and not the NodeJS engine.
+- The "k2fa" inference model is the export file from "fastai.vision.learn.export()" command. It enables the model to "predict" without the need for massive servers and GPUs.
+
+
+
+
+
+
 
 
