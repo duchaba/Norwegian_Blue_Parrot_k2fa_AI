@@ -35,7 +35,7 @@ One should run the test many times. It will give a clear understanding of what i
 
 There are copious statistics that accompany each inference. The in-depth explanation for the statistics, data, insights, biases, and limitations will be in the next section, but for now, enjoy  being a "k2fa" avatar.
 
-### Goto the k2fa website to test it, https://nbp3-webclient-2020.web.app/#predict
+>### _Go to the k2fa website to test it, https://nbp3-webclient-2020.web.app/#predict_
 
 A sample result is as follows.
 
@@ -213,10 +213,115 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 - It is an enterprise-grade deployment at little or no cost using microservices and CDN. Be-nice-2020's architecture (https://be-nice-2020.com/#architecture) is a well-written architecture, including step-by-step instructions. The difference is that the Google App Engine is a Python engine and not the NodeJS engine.
 - The "k2fa" inference model is the export file from "fastai.vision.learn.export()" command. It enables the model to "predict" without the need for massive servers and GPUs.
 
+# The Data
 
+For a deep learning project, the accuracy and the perceived usefulness of the AI model is due in large part from the size of data, the accuracy of labeling, and the biases both intentionally and adventitiously.
 
+![data section image](https://nbp3-webclient-2020.web.app/image/undraw_data_xmfy.svg)
 
+"K2fa" uses the following checklist . The steps for training "k2fa" is comparable to other image classifier models, and therefore, the list is suitable for most AI projects, such as:
 
+- identify endangered species,
+- identify sickness in chicken flocks,
+- identify distracted drivers,
+- identify real or fake Nike shoes,
+- identify automobile make and model,
+- identify between Sunni and Shiite Muslims (controversial project),
+- identify potential criminals in a shopping mall, i.e., before committing the criminal act,
+- and identify skin cancer cells.
 
+1. ### Common Sense
 
+- There will always be discord among AI scientists, domain experts, and end-users about what should or should not be in the data. The goal is to have a balance between technical requirements and the project objectives.
+- A data discussion is essential to the AI model's success. The debate is highly desirable at the project "envision" phase and include all  parties.
+
+![common sense image](https://nbp3-webclient-2020.web.app/image/undraw_work_chat_erdt.svg)
+
+2. ### Time Allocation
+
+- Project managers, who are new to AI, always underestimate the time for data collection and data cleaning. They are steps #1 and #2 in the "Model" section.
+- On average, the allocation time should be 45%  to 65% of the project schedule.
+The "k2fa" data collection and cleaning took about six weeks. It is on the higher end of 65% because the domain experts can't drive themselves to the farm.
+
+![time allocation image](https://nbp3-webclient-2020.web.app/image/data-9.jpg)
+
+3. ### Subject Domain Experts
+
+- Subject domain experts are people that know how to label the data correctly. For example, for "identify skins cancel cells," a dermatologist is a top choice, and for "identify sickness in the chicken flocks", it would be a chicken farmer or a veterinarian.
+- For a subject that requires research, an analyst, a librarian, or crowd-sourcing is preferable. For example, "identify a person age" is ideally suited to use crowd-sourcing, or "identify major cities by partial aerial photographs" requires a herculean researching effort, so an analyst or a librarian is a top choice.
+- For "k2fa," the subject domain experts are two impetuous eleven and thirteen-year-old kids . They have the energy to run around the farms taking photos and videos. They are wiz when it comes to searching on social media, and they can label the images at a dizzying speed. Furthermore, kids are the experts to judge which farm animal pictures are valid or invalid.
+
+![domain experts image](https://nbp3-webclient-2020.web.app/image/undraw_good_team_m7uu.svg)
+
+4. ### The Objectives
+
+- The goal for the "k2fa" AI model is 94%  accuracy, using the standard "root mean square error" equation. A rule-of-thumb is 94% accuracy, or higher, is designating as a world-class AI model.
+- The project goal is to have a mobile app accessing the "k2fa" as an API REST microservices. The target API response time is 0.5 seconds  or less. The response target time is the same as enterprise-grade REST API microservices.
+- The "k2fa" budget for collecting data-images is equivalent to the cost of pizzas, atomic hot chicken wings, and boba-teas.
+- The original schedule for data collection is for three weeks, but the actual is six weeks.
+
+![objective image](https://nbp3-webclient-2020.web.app/image/undraw_analytics_5pgy.svg)
+
+5. ### Valid Data
+
+- The data-image size is 224 by 224  pixels. New images must be resized, cropped, and centered. Initially, it was 448 by 448 pixels, but after a few training cycles, the smaller size is sufficient.
+- The thirteen farm animals are cat, cattle, chicken, dog, donkey, duck, goat, goose, horse, pig, rabbit, sheep, and turkey.
+- The goal is to have 1,000 images  per category. Since ILSVRC trained the "resnet34" model with over a million pictures, the "k2fa" leverages the pre-compute weights, and therefore, does not require hundreds of thousand images.
+- The actual is an unbalanced number of images per category, e.g., the cat-folder has 1036 files while the rabbit-folder has 738 files.
+- The image must be relatively centered. Collectively, they represent the animal in a different setting and different perspectives, e.g., cat in a chair, cat in the barn, cat grumpy face, cat buttock, or cat in a reindeer costume.
+- If there is a disagreement in the data-images, the domain experts will decide.
+
+![valid data 1 image](https://nbp3-webclient-2020.web.app/image/databunch3.jpg)
+![valid data 2 image](https://nbp3-webclient-2020.web.app/image/databunch4.jpg)
+![valid data 3 image](https://nbp3-webclient-2020.web.app/image/databunch5.jpg)
+
+6. ### Invalid Data
+
+- The subject domain experts define valid and invalid image guidelines at the beginning of the projects so that others can help.
+- Stock photos  are invalid.
+- Photographers take pictures in a controlled setting are invalid.
+- If using all stock-photos, then the model might converge to higher accuracy. However, from the "objectives #4" above, the images are invalid because it is not how kids would take a photo on their iPhone walking around a farm.
+- If two or more pictures look similar, then take only one. For example, when slicing images from a video feed at 24 frames per second, there is one, two, or three images per second that are sufficient difference.
+- Photos with animals far away or too fuzzy are invalid.
+- Pictures with multiple farm animals in one frame are valid; only if there is an intended animal in the foreground, otherwise they are invalid.
+
+![Invalid data image](https://nbp3-webclient-2020.web.app/image/invalid.jpg)
+
+7. ### "Train" and "Valid" Data Set
+
+- The "train data-image set" is for the model to learn, and the "valid data-image set" is for the model to compare for accuracy.
+- Rachel Thomas wrote an excellent article, "How (and why) to create a good validation set," on how to choose a valid data set.
+- A rule of thumb is setting aside 20%  of the data-images for the validation set.
+- Some of Kaggle's competitions use "valid," and "test" data set interchangeably. In this series, the "test" is different from the "valid" data set.
+
+![train and valid data set imge](https://nbp3-webclient-2020.web.app/image/valid3.jpg)
+
+8. ### Real-world Test Data Set
+
+- The domain experts or the AI scientists do not  create the "test" data set. Unlike the "valid," the "test" is not part of the AI model development process.
+- It is not an AI Kaggle's competition (https://www.fast.ai/2017/11/13/validation-sets/); therefore, the "test" is to validate the overall project goal and not limited to the AI model testing. Refer to the "Objective #4" bullet-point.
+- The "test" data set is a sample of the real-world photos  uses during the user-testing phase. It can be any pictures, such as, cat dress up as a dog, wolf, selfie, tree, or hamburger. The salient point is that the domain expert or the AI scientists would not have thought of using these pictures.
+- The purpose of the "test" is exposing the AI model intentional biases  and adventitious biases.
+- The "test" will reveal the model generalization  outside the "farm" setting, e.g., a picture of a dog walking in a city, an indoor pig, or a sculpture of a horse.
+- As relevant as the "test" to the project goal, the result does not discredit the model calculated accuracy using the "valid" data set.
+
+![test data set image](https://nbp3-webclient-2020.web.app/image/test.jpg)
+
+9. ### Biases
+
+- The discussion of biases is vital to the success of the project, see "Objectives #4", and it can be a fun mental exercise, but it is often overlooked.
+- The next section is devoted to intentional biases and adventitious biases.
+
+![biases image](https://nbp3-webclient-2020.web.app/image/p7.jpg)
+
+10. ### Model Generalization
+
+- Convolutional neural network (CNN) is excelling  at generalization. It can correctly identify images that are not in the "train" or "valid" data-set.
+- In comparison to rules-based logic or traditional image pattern recognition software, it is a quantum step forward. Before CNN, the image classification problems were deemed unsolvable.
+- "K2fa" can correctly identify photos where the farm animal is not prominent.
+- For example, from the real-word user-testing, "k2fa" can correctly identify a neighborhood cat, a picture of Jenifer walking her dog, Ashley in a bunny suit, and a car-hood ornament. That's a fantastic generalization. It exceeds the AI scientist's dreams.
+
+![model generalization 1 image](https://nbp3-webclient-2020.web.app/image/p16.jpg)
+![model generalization 1 image](https://nbp3-webclient-2020.web.app/image/p1.jpg)
+![model generalization 1 image](https://nbp3-webclient-2020.web.app/image/p2.jpg)
 
