@@ -5,7 +5,7 @@ Welcome  to the Norwegian Blue Parrot project. It is a series of articles for de
 
 Welcome to the first "Norwegian Blue Parrot" project article. For each AI project, I write the code and show you how it works. You can test it using a mobile phone, tablet, and laptop (on the website, https://nbp3-webclient-2020.web.app/). Furthermore, you can see for yourself the effectiveness and the shortcoming of each AI model.
 
-![introduction](https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="640">
 
 I have developed dozens of AI projects, and with each AI model, I learn a bit more insights  into the world of Artificial Intelligence.
 
@@ -25,7 +25,7 @@ Before charging ahead with an in-depth explanation, let's test the "k2fa" kids. 
 
 Hello, from "k2fa" kids. Since "k2fa" kids are not robots, you are selected to be the avatar  , i.e., the hands and feet of the "k2fa" kids.
 
-![prediction image](https://nbp3-webclient-2020.web.app/image/undraw_experience_design_eq3j.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_experience_design_eq3j.svg" width="640">
 
 Imagine yourself as a "k2fa"  kid, walking around the farm, taking photos  , or uploading them using iPhone, Android phone, tablet, or laptop. This website is mobile-friendly.
 
@@ -73,7 +73,7 @@ A sample result is as follows.
 
 The Deep Learning convolutional neural network (CNN) model is like the donut of the AI discipline. It's easy. It's sweet, and it is the go-to  solution for image classifier problems.
 
-![CNN Model image](https://nbp3-webclient-2020.web.app/image/undraw_donut_love_kau1.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_donut_love_kau1.svg" width="640">
 
 The following is not a step by step instruction, but it covers the essential notes for an AI scientist to replicate the model independently.
 
@@ -105,7 +105,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 
 "K2fa" model is built on the fantastic "fast.ai (https://fasta.ai)" library by Jeremy Howard, Rachel Thomas, and Sylvain Gugger. The goal is for an AI scientist to have essential information to replicate the "k2fa" model independently. The salient point is that it is just math and coding,  no magic. The recipe of the "k2fa" Deep Learning convolutional neural network image classifier is as follows.
 
-![Deep Learning image](https://nbp3-webclient-2020.web.app/image/undraw_blooming_jtv6.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_blooming_jtv6.svg" width="640">
 
 1. ### Collect data
 
@@ -217,7 +217,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 
 For a deep learning project, the accuracy and the perceived usefulness of the AI model is due in large part from the size of data, the accuracy of labeling, and the biases both intentionally and adventitiously.
 
-![data section image](https://nbp3-webclient-2020.web.app/image/undraw_data_xmfy.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_data_xmfy.svg" width="640">
 
 "K2fa" uses the following checklist . The steps for training "k2fa" is comparable to other image classifier models, and therefore, the list is suitable for most AI projects, such as:
 
@@ -235,7 +235,7 @@ For a deep learning project, the accuracy and the perceived usefulness of the AI
 - There will always be discord among AI scientists, domain experts, and end-users about what should or should not be in the data. The goal is to have a balance between technical requirements and the project objectives.
 - A data discussion is essential to the AI model's success. The debate is highly desirable at the project "envision" phase and include all  parties.
 
-![common sense image](https://nbp3-webclient-2020.web.app/image/undraw_work_chat_erdt.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_work_chat_erdt.svg" width="640">
 
 2. ### Time Allocation
 
@@ -251,7 +251,7 @@ The "k2fa" data collection and cleaning took about six weeks. It is on the highe
 - For a subject that requires research, an analyst, a librarian, or crowd-sourcing is preferable. For example, "identify a person age" is ideally suited to use crowd-sourcing, or "identify major cities by partial aerial photographs" requires a herculean researching effort, so an analyst or a librarian is a top choice.
 - For "k2fa," the subject domain experts are two impetuous eleven and thirteen-year-old kids . They have the energy to run around the farms taking photos and videos. They are wiz when it comes to searching on social media, and they can label the images at a dizzying speed. Furthermore, kids are the experts to judge which farm animal pictures are valid or invalid.
 
-![domain experts image](https://nbp3-webclient-2020.web.app/image/undraw_good_team_m7uu.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_good_team_m7uu.svg" width="640">
 
 4. ### The Objectives
 
@@ -260,7 +260,7 @@ The "k2fa" data collection and cleaning took about six weeks. It is on the highe
 - The "k2fa" budget for collecting data-images is equivalent to the cost of pizzas, atomic hot chicken wings, and boba-teas.
 - The original schedule for data collection is for three weeks, but the actual is six weeks.
 
-![objective image](https://nbp3-webclient-2020.web.app/image/undraw_analytics_5pgy.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_analytics_5pgy.svg" width="640">
 
 5. ### Valid Data
 
@@ -335,7 +335,7 @@ The "k2fa" data collection and cleaning took about six weeks. It is on the highe
 - Another reason for data revisiting is dealing with false-positive. For example, in "k2fa", one could add a new category "tiger," and therefore, "k2fa" will not identify tigers as horses.
 - The salient point is that the resampling of data does not imply resulting in better accuracy. The accuracy could suffer from new and resampling data.
 
-![revisit image](https://nbp3-webclient-2020.web.app/image/undraw_asset_selection_ix3v.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_asset_selection_ix3v.svg" width="640">
 
 # Biases
 
@@ -392,7 +392,7 @@ After user-testing, the adventitious biases emerge with fascinating discoveries.
 1. "k2fa" verifies the farm animal pictures.
 1. A kid, who has the shortest time finding all thirteen animals, wins the round.
 
-![scavenger hunt](https://nbp3-webclient-2020.web.app/image/undraw_order_confirmed_aaw7.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_order_confirmed_aaw7.svg" width="640">
 
 The second "k2fa" use-case is as follows.
 
@@ -401,7 +401,7 @@ The second "k2fa" use-case is as follows.
 1. "k2fa" judges whether the impression passed or failed.
 1. A kid or team, who has the shortest time, wins the round.
 
-![picture charades](https://nbp3-webclient-2020.web.app/image/undraw_social_influencer_sgsv.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_social_influencer_sgsv.svg" width="640">
 
 The use-case's error condition and recovery are for analysts and the QA team to ponder, such as false-positive or cheating, by taking pictures of the online image. As said before, "K2fa" is an anodyne subject, and therefore, there is no known unintentional consequence.
 
