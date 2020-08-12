@@ -411,7 +411,7 @@ If "k2fa" is in a science fiction story, then "k2fa" could be an army of robots 
 
 The "k2fa" project is a  fun journey. I choose it as the first in the series because I have full control, and I can expose each step in the process. It is the same procedure for a momentous AI project, such as "identify people that likely to  vote Republicans or Democrats."
 
-![end journey](https://nbp3-webclient-2020.web.app/image/undraw_convert_2gjv.svg)
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_convert_2gjv.svg" width="640">
 
 More often than not, I have less control over the data, the biases, and the objectives, such as in AI competitions or work projects.
 
