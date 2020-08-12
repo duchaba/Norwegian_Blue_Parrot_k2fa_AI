@@ -325,3 +325,53 @@ The "k2fa" data collection and cleaning took about six weeks. It is on the highe
 ![model generalization 1 image](https://nbp3-webclient-2020.web.app/image/p1.jpg)
 ![model generalization 1 image](https://nbp3-webclient-2020.web.app/image/p2.jpg)
 
+11. ### Revisit
+
+- One of the most common and most significant mistakes that software project managers or even software solution architects did is to use the "agile software development" methodology for managing an AI project.
+- In other words, one cannot gather a little bit of data and train it. It is because the model accuracy will not be able to converge. Furthermore, one cannot collect a few categories, e.g., "chicken" and "dog," train it, and expect the model to converge the same when added more classes.
+- AI model development is not a "waterfall software development" methodology. It is not collecting the data and never revisiting it except for in a competition where one cannot alter the data.
+- The data revisiting happens during the training session optimization, e.g., in "k2fa" the data image size is reduced by half after the first few training sessions.
+- The AI biases will force the resample of data. For example, in "k2fa", the data should be augmented with baby turkey pictures. A "poult" is a young domestic chicken, turkey, goose, pheasant, or other fowl, so the baby turkey does not a cute name like "chick" or "duckling."
+- Another reason for data revisiting is dealing with false-positive. For example, in "k2fa", one could add a new category "tiger," and therefore, "k2fa" will not identify tigers as horses.
+- The salient point is that the resampling of data does not imply resulting in better accuracy. The accuracy could suffer from new and resampling data.
+
+![revisit image](https://nbp3-webclient-2020.web.app/image/undraw_asset_selection_ix3v.svg)
+
+# Biases
+
+Biases exist in all data, even data from Kaggle's competitions. The reason is that people are different from nationality, religion, economic level to education. One group will say the data is fair, while other groups say the data is bias.
+
+The goal  is not to achieve data without biases, but data with the intentional biases listed in a "readme" document accompany the data.
+
+"K2fa" is an anodyne subject. The resulting AI model and the app will not provoke a strong adverse reaction, but the data contain intentional biases. The domain experts and the business analysts are the best people in the project to list the intentional biases.
+
+Even data is given in a competition. It is always a fun mental exercise  to spot the biases in the data.
+
+If this journey is about "identify between Sunni and Shiite Muslims" AI project, then understand biases are vital to the success of the project. However, the process of understanding the biases is the same. The "k2fa" intentional biases are as follow.
+
+- "k2fa" predicts all baby fowl as "chick" or "duckling." It is because the farm and online search do not have baby turkey or baby goose. Cute, yellow and fluffy chick and duckling pictures are easy to get, but what about baby turkey? They are cute too.
+
+![bias baby turkey image](https://nbp3-webclient-2020.web.app/image/p18.jpg)
+
+- "k2fa" predicts any graceful in-motion running donkeys or bulls as horses. It is because the data-images have only horses in a graceful motion and never a donkey.
+
+![bias deer image](https://nbp3-webclient-2020.web.app/image/p19.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
