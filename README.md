@@ -401,7 +401,7 @@ The second "k2fa" use-case is as follows.
 1. "k2fa" judges whether the impression passed or failed.
 1. A kid or team, who has the shortest time, wins the round.
 
-![picture charades](https://nbp3-webclient-2020.web.app/image/undraw_order_confirmed_aaw7.svg)
+![picture charades](https://nbp3-webclient-2020.web.app/image/undraw_social_influencer_sgsv.svg)
 
 The use-case's error condition and recovery are for analysts and the QA team to ponder, such as false-positive or cheating, by taking pictures of the online image. As said before, "K2fa" is an anodyne subject, and therefore, there is no known unintentional consequence.
 
