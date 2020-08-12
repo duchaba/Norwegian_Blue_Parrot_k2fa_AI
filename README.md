@@ -357,21 +357,75 @@ If this journey is about "identify between Sunni and Shiite Muslims" AI project,
 
 ![bias deer image](https://nbp3-webclient-2020.web.app/image/p19.jpg)
 
+- "k2fa" predicts indoor pictures as dogs or cats, where the animal is a minor portion. It is because the data has the majority of indoor pictures with cats or dogs.
+![indoor biases](https://nbp3-webclient-2020.web.app/image/p17.jpg)
 
+After user-testing, the adventitious biases emerge with fascinating discoveries. As before, if this journey is about "identify potential criminals in a shopping mall, i.e., before committing the criminal act," then the unforeseen consequences in the biases would be catastrophic. Never the less, the process is the same. The "k2fa" adventitious biases are as follows.
 
+- "k2fa" predicts "false positive," i.e. wrong prediction with a high level of certainty. For example, smiling people or selfie pictures predict as dogs or cats.
 
+![face biases 1](https://nbp3-webclient-2020.web.app/image/p8.jpg)
+![face biases 2](https://nbp3-webclient-2020.web.app/image/p3.jpg)
 
+- "k2fa" predicts flying ducks as geese.
+- "k2fa" predicts any animal or picture shows much lite-skin, pinkness color as pigs. Even for baby pictures.
 
+![pig biases](https://nbp3-webclient-2020.web.app/image/p5.jpg)
 
+- "k2fa" predicts tigers as horses.
+![tiger biases](https://nbp3-webclient-2020.web.app/image/p7.jpg)
 
+- In general, when confronting pictures that were not one of the thirteen farm animals, the desired outcome is uncertainty  and not false-positive. "K2fa" does it about 42% of the time.
 
+![uncertain negative](https://nbp3-webclient-2020.web.app/image/p10.jpg)
+![uncertain negative](https://nbp3-webclient-2020.web.app/image/p11.jpg)
+![uncertain negative](https://nbp3-webclient-2020.web.app/image/p4.jpg)
+![uncertain negative](https://nbp3-webclient-2020.web.app/image/p9.jpg)
 
+# Use Cases
 
+"Use case" is a consulting terminology for "what are the steps leading to the desired outcome from the user's point of view." For "k2fa," the first "happy path," use-case is as follows.
 
+1. Kids download the "k2fa" app on iPhone or Android phones.
+1. Kids start playing the "scavenger hunt"  game with their friends.
+1. Kids run around a farm, taking pictures of farm animals.
+1. "k2fa" verifies the farm animal pictures.
+1. A kid, who has the shortest time finding all thirteen animals, wins the round.
 
+![scavenger hunt](https://nbp3-webclient-2020.web.app/image/undraw_order_confirmed_aaw7.svg)
 
+The second "k2fa" use-case is as follows.
 
+1. Kids download the "k2fa" app on iPhone or Android phones.
+1. Kids start playing the "picture charades"  game with their friends, where each player or a team taking pictures of themselves, making faces, paint faces, acting poses, or dress up as the animal. If it is a team, each team member can choose a different animal.
+1. "k2fa" judges whether the impression passed or failed.
+1. A kid or team, who has the shortest time, wins the round.
 
+![picture charades](https://nbp3-webclient-2020.web.app/image/undraw_order_confirmed_aaw7.svg)
 
+The use-case's error condition and recovery are for analysts and the QA team to ponder, such as false-positive or cheating, by taking pictures of the online image. As said before, "K2fa" is an anodyne subject, and therefore, there is no known unintentional consequence.
 
+If "k2fa" is in a science fiction story, then "k2fa" could be an army of robots    roaming the farm protecting livestock and killing foxes, bears, and coyotes but not tigers. It is because tigers are identifying as "false-positive horses."
+
+>## _The End_
+
+The "k2fa" project is a  fun journey. I choose it as the first in the series because I have full control, and I can expose each step in the process. It is the same procedure for a momentous AI project, such as "identify people that likely to  vote Republicans or Democrats."
+
+![end journey](https://nbp3-webclient-2020.web.app/image/undraw_convert_2gjv.svg)
+
+More often than not, I have less control over the data, the biases, and the objectives, such as in AI competitions or work projects.
+
+In the second project, we will walk through the same procedure, and I will point out where I have no control. If I could use one of the work projects, you would laugh-out-loud  on the preposterous requirements.
+
+The most common one is, "I know that you don't have access to the data or even a data sample, but I want 100% accuracy." My second least favorite is "you must adhere to the team agile methodology in building the AI model and showing it having increase accuracy every two weeks."
+
+On the other side of absurdity, I have been on projects where we discuss AI as a mythical  unicorn. The PowerPoint shows in-depth complexity and magical consciousness. If I could do massive matrix multiplication on PowerPoint, then the project is halfway done.
+
+As evidence in the "k2fa" journey, AI is not magically or challenging to build. You do need deep computer science and math knowledge, and it is not from two months of programming boot-camp. Still, it is also true that the data, the biases, the objectives, and the use-cases shape the perceived usefulness of the AI model.
+
+Similar to the social media platforms and mobile app revolutions, we can choose to create AI ethnically  or feloniously. However, unlike social transformations, where one can opt-out, AI is shaping the world economy and effecting individual daily life.
+
+For example, "Mr. Jones' insurance will not pay for his recent car accidence." In the USA, it is most likely that an AI renders the decision. Mr. Jones can't opt-out, or he doesn't even know because the human insurance agent did not tell him.
+
+AI systems are powering the world economy, and some are visible like Apple's Siri, but most are not. The salient point is that AI is here, and you can't opt-out.
 
