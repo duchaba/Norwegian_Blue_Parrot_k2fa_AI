@@ -174,7 +174,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 
 - Train with "fastai.vision.fit_one_cycle()" method.
 - fit_one_cycle (https://iconof.com/1cycle-learning-rate-policy/) is better performance in speed and accuracy, over the ".fit()" method.
-- Select the "root mean square" as the accuracy measurement.
+- Select the "CrossEntropy" as the accuracy measurement.
 - The resulting accuracy is 0.955556 
 
 ![train image](https://nbp3-webclient-2020.web.app/image/train1.jpg)
@@ -255,7 +255,7 @@ The "k2fa" data collection and cleaning took about six weeks. It is on the highe
 
 4. ### The Objectives
 
-- The goal for the "k2fa" AI model is 94%  accuracy, using the standard "root mean square error" equation. A rule-of-thumb is 94% accuracy, or higher, is designating as a world-class AI model.
+- The goal for the "k2fa" AI model is 94%  accuracy, using the standard "CrossEntropy" equation. A rule-of-thumb is 94% accuracy, or higher, is designating as a world-class AI model.
 - The project goal is to have a mobile app accessing the "k2fa" as an API REST microservices. The target API response time is 0.5 seconds  or less. The response target time is the same as enterprise-grade REST API microservices.
 - The "k2fa" budget for collecting data-images is equivalent to the cost of pizzas, atomic hot chicken wings, and boba-teas.
 - The original schedule for data collection is for three weeks, but the actual is six weeks.
