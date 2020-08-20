@@ -5,7 +5,7 @@ Welcome  to the Norwegian Blue Parrot project. It is a series of articles for de
 
 Welcome to the first "Norwegian Blue Parrot" project article. For each AI project, I write the code and show you how it works. You can test it using a mobile phone, tablet, and laptop (on the website, https://nbp3-webclient-2020.web.app/). Furthermore, you can see for yourself the effectiveness and the shortcoming of each AI model.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="640" style="margin: 0 auto;">
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="640" style="margin: 0 auto;" />
 
 I have developed dozens of AI projects, and with each AI model, I learn a bit more insights  into the world of Artificial Intelligence.
 
