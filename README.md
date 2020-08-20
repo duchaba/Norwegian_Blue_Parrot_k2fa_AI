@@ -5,7 +5,7 @@ Welcome  to the Norwegian Blue Parrot project. It is a series of articles for de
 
 Welcome to the first "Norwegian Blue Parrot" project article. For each AI project, I write the code and show you how it works. You can test it using a mobile phone, tablet, and laptop (on the website, https://nbp3-webclient-2020.web.app/). Furthermore, you can see for yourself the effectiveness and the shortcoming of each AI model.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="640">
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="640" style="margin: 0 auto;">
 
 I have developed dozens of AI projects, and with each AI model, I learn a bit more insights  into the world of Artificial Intelligence.
 
@@ -175,7 +175,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 - Train with "fastai.vision.fit_one_cycle()" method.
 - fit_one_cycle (https://iconof.com/1cycle-learning-rate-policy/) is better performance in speed and accuracy, over the ".fit()" method.
 - Select the "CrossEntropy" as the accuracy measurement.
-- The resulting accuracy is 0.955556 
+- The resulting accuracy is 0.955556
 
 ![train image](https://nbp3-webclient-2020.web.app/image/train1.jpg)
 
@@ -428,4 +428,3 @@ Similar to the social media platforms and mobile app revolutions, we can choose 
 For example, "Mr. Jones' insurance will not pay for his recent car accidence." In the USA, it is most likely that an AI renders the decision. Mr. Jones can't opt-out, or he doesn't even know because the human insurance agent did not tell him.
 
 AI systems are powering the world economy, and some are visible like Apple's Siri, but most are not. The salient point is that AI is here, and you can't opt-out.
-
