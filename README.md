@@ -5,7 +5,7 @@ Welcome  to the Norwegian Blue Parrot project. It is a series of articles for de
 
 Welcome to the first "Norwegian Blue Parrot" project article. For each AI project, I write the code and show you how it works. You can test it using a mobile phone, tablet, and laptop (on the website, https://nbp3-webclient-2020.web.app/). Furthermore, you can see for yourself the effectiveness and the shortcoming of each AI model.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="60%" style="margin:2.5rem;max-width:480px"  />
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_true_love_cy8x.svg" width="60%" style="margin:2rem;" />
 
 I have developed dozens of AI projects, and with each AI model, I learn a bit more insights  into the world of Artificial Intelligence.
 
@@ -25,7 +25,7 @@ Before charging ahead with an in-depth explanation, let's test the "k2fa" kids. 
 
 Hello, from "k2fa" kids. Since "k2fa" kids are not robots, you are selected to be the avatar  , i.e., the hands and feet of the "k2fa" kids.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_experience_design_eq3j.svg" width="640">
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_experience_design_eq3j.svg" width="60%" style="margin:2rem;" />
 
 Imagine yourself as a "k2fa"  kid, walking around the farm, taking photos  , or uploading them using iPhone, Android phone, tablet, or laptop. This website is mobile-friendly.
 
@@ -39,9 +39,9 @@ There are copious statistics that accompany each inference. The in-depth explana
 
 A sample result is as follows.
 
-![cat result image](https://media-exp1.licdn.com/dms/image/C4D12AQFcyk7e7VszMg/article-inline_image-shrink_1000_1488/0?e=1602115200&v=beta&t=fZ-OJsgyyT6W7LqdU4s4wkTtja5leFpx74uqUEHT7BM)
+<img src="https://media-exp1.licdn.com/dms/image/C4D12AQFcyk7e7VszMg/article-inline_image-shrink_1000_1488/0?e=1602115200&v=beta&t=fZ-OJsgyyT6W7LqdU4s4wkTtja5leFpx74uqUEHT7BM" width="80%" style="margin:2rem !important;" />
 
-![cat stat](https://media-exp1.licdn.com/dms/image/C5612AQFsxUUUvbJ4Ow/article-inline_image-shrink_1000_1488/0?e=1602115200&v=beta&t=c2Ue9AWM7GAvYpz82d3kRTMXsxG_ubFPAmE48IW1_UU)
+<img src="https://media-exp1.licdn.com/dms/image/C5612AQFsxUUUvbJ4Ow/article-inline_image-shrink_1000_1488/0?e=1602115200&v=beta&t=c2Ue9AWM7GAvYpz82d3kRTMXsxG_ubFPAmE48IW1_UU" width="80%" style="margin:2rem !important;" />
 
 ## Legends:
 
@@ -73,7 +73,7 @@ A sample result is as follows.
 
 The Deep Learning convolutional neural network (CNN) model is like the donut of the AI discipline. It's easy. It's sweet, and it is the go-to  solution for image classifier problems.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_donut_love_kau1.svg" width="640">
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_donut_love_kau1.svg" width="60%" style="margin:2rem !important;" />
 
 The following is not a step by step instruction, but it covers the essential notes for an AI scientist to replicate the model independently.
 
@@ -105,7 +105,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 
 "K2fa" model is built on the fantastic "fast.ai (https://fasta.ai)" library by Jeremy Howard, Rachel Thomas, and Sylvain Gugger. The goal is for an AI scientist to have essential information to replicate the "k2fa" model independently. The salient point is that it is just math and coding,  no magic. The recipe of the "k2fa" Deep Learning convolutional neural network image classifier is as follows.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_blooming_jtv6.svg" width="640">
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_blooming_jtv6.svg" width="60%" style="margin:2rem !important;" />
 
 1. ### Collect data
 
@@ -116,7 +116,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 - Separate the images into one of the thirteen farm animal folders.
 - True to form, the data collection takes most of the time in this project.
 
-![collect data image](https://nbp3-webclient-2020.web.app/image/farm.jpg)
+<img src="https://nbp3-webclient-2020.web.app/image/farm.jpg" width="80%" style="margin:2rem !important;" />
 
 2. ### Clean data
 
