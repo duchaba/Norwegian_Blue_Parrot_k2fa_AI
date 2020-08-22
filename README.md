@@ -217,7 +217,7 @@ The "awe" in the awe-inspiring is that the UAT does not need to understand the  
 
 For a deep learning project, the accuracy and the perceived usefulness of the AI model is due in large part from the size of data, the accuracy of labeling, and the biases both intentionally and adventitiously.
 
-<img src="https://nbp3-webclient-2020.web.app/image/undraw_data_xmfy.svg" width="640">
+<img src="https://nbp3-webclient-2020.web.app/image/undraw_data_xmfy.svg" width="60%">
 
 "K2fa" uses the following checklist . The steps for training "k2fa" is comparable to other image classifier models, and therefore, the list is suitable for most AI projects, such as:
 
